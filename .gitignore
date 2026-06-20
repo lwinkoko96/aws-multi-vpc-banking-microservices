@@ -1,13 +1,25 @@
-.terraform/
+# Terraform
+**/.terraform/*
 *.tfstate
 *.tfstate.*
+crash.log
+crash.*.log
 *.tfvars
+!*.tfvars.example
+
+# Application binary
+fake-service
+**/fake-service
+*.bin
+*.zip
+*.tar.gz
+
+# Secrets
 *.pem
 *.key
 .env
+.env.*
+
+# OS / editor
 .DS_Store
-crash.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+.vscode/
